@@ -10,9 +10,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.zhuguohui.horizontalpage.adapter.MyAdapter;
-import com.zhuguohui.horizontalpage.view.DividerItemDecoration;
 import com.zhuguohui.horizontalpage.view.HorizontalPageLayoutManager;
-import com.zhuguohui.horizontalpage.view.PagingItemDecoration;
 import com.zhuguohui.horizontalpage.view.PagingScrollHelper;
 
 public class MainActivity extends AppCompatActivity implements PagingScrollHelper.onPageChangeListener, View.OnClickListener {
@@ -61,9 +59,9 @@ public class MainActivity extends AppCompatActivity implements PagingScrollHelpe
     private HorizontalPageLayoutManager horizontalPageLayoutManager = null;
     private LinearLayoutManager hLinearLayoutManager = null;
     private LinearLayoutManager vLinearLayoutManager = null;
-    private DividerItemDecoration hDividerItemDecoration = null;
-    private DividerItemDecoration vDividerItemDecoration = null;
-    private PagingItemDecoration pagingItemDecoration = null;
+//    private DividerItemDecoration hDividerItemDecoration = null;
+//    private DividerItemDecoration vDividerItemDecoration = null;
+//    private PagingItemDecoration pagingItemDecoration = null;
 
     private void init() {
 //        hLinearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
@@ -87,11 +85,11 @@ public class MainActivity extends AppCompatActivity implements PagingScrollHelpe
                 break;
             case R.id.rb_vertical_page:
                 layoutManager = vLinearLayoutManager;
-                itemDecoration = vDividerItemDecoration;
+//                itemDecoration = vDividerItemDecoration;
                 break;
             case R.id.rb_vertical_page2:
                 layoutManager = hLinearLayoutManager;
-                itemDecoration = hDividerItemDecoration;
+//                itemDecoration = hDividerItemDecoration;
                 break;
         }
         if (layoutManager != null) {
